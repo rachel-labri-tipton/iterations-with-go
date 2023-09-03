@@ -77,6 +77,7 @@ func getUserInput () (string, string, string, uint) {
 
 		fmt.Printf("How many tickets do you want to buy? \n")
 		fmt.Scan(&userTickets)
+		fmt.Scan(&userTickets)
 
 		// it's implicit that this is a boolean type
 		// := is a short variable declaration, quickly declaring and initializing a variable
