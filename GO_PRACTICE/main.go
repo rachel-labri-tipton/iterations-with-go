@@ -22,7 +22,7 @@ func main() {
 	for {
 		fistName, lastName, email, userTickets := getUserInput()
 		isValideName, isValidEmail, isValidTicketNumber := validateUserInput(firstName, lastName, email, userTickets)
-
+// adding comment
 		if isValidName && isValidEmail && isValidTicketNumber {
 			remainingTickets = remainingTickets - userTickets
 			bookings = append(bookings, firstName + " " + lastName)
@@ -37,6 +37,7 @@ func greetUsers() {
 			fmt.Printf("Welcome to %v booking application.", conferenceName)
   		fmt.Printf("We have a total of %v tickets available. \n", remainingTickets)
 			fmt.Printf("Get your tickets here to attend the %v! \n", conferenceName)
+			fmt.Printf("Please enter your information to book your tickets. \n")
 	}
 
 //this function takes a slice of strings and returns a slice of strings
